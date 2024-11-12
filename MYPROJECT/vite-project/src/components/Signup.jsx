@@ -12,7 +12,6 @@ export const Signup = () => {
     const navigate = useNavigate();
 
     const isPasswordStrong = (password) => {
-        // Regular expression for password validation
         const strongPasswordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
         return strongPasswordRegex.test(password);
     };
@@ -21,8 +20,6 @@ export const Signup = () => {
         e.preventDefault();
         setErrorMessage("");
         setPasswordError("");
-
-        // Validate password strength before sending the request
         if (!isPasswordStrong(password)) {
             setPasswordError("Password must be at least 8 characters, including an uppercase letter, a lowercase letter, a number, and a special character.");
             return;
