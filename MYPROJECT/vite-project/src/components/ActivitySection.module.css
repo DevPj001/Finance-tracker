@@ -1,0 +1,201 @@
+.activitySection {
+    width: 26%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+    padding: 29px 24px;
+    
+  }
+  
+  .sectionTitle {
+    color: #000;
+    font: 700 24px/1.4 'Uni Neue', sans-serif;
+    margin-bottom: 41px;
+  }
+  
+  .activityCircles {
+    position: relative;
+     width: 250px;
+    height: 250px;
+  }
+  
+  .activityCircle {
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-align: center;
+  }
+
+  .green {
+    background-color: #25c935;
+    width: 130px;
+    height: 130px;
+    top: -10px;
+    left: 90px;
+    z-index: 2;
+  }
+
+  .grey {
+    background-color: #4d4d4d;
+    width: 80px;
+    height: 80px;
+    top: 90px;
+    left: 90px;
+    z-index: 3;
+  }
+
+  .white {
+    background-color: #f0f0f0;
+    width: 100px;
+    height: 100px;
+    top: 40px;
+    left: 20px;
+    z-index: 2;
+  }
+  
+  .activityAmount {
+    font: 500 16px 'Uni Neue', sans-serif;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+
+  }
+ 
+  .activityCategory {
+    font: 10 12px 'Uni Neue', sans-serif;
+    color: #000000;
+    margin-top: 5px;
+    font-family: fantasy;
+
+  }
+  .activityForm {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  /*  */
+
+/* From Uiverse.io by Lucaasbre */ 
+.inputGroup {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  padding: 7px 0 0;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 2px;
+}
+
+.inputText {
+  font-family: inherit;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #000000;
+  border-radius: 0 !important;
+  outline: 0;
+  font-size: 17px;
+  color: #000000;
+  padding: 20px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.inputText::placeholder {
+  color: transparent;
+}
+
+.inputText:placeholder-shown ~ .inputTextLabel {
+  font-size: 17px;
+  cursor: text;
+  color: #000;
+}
+
+.inputTextLabel {
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  font-size: 17px;
+  color: #7f7f7f;
+  pointer-events: none;
+}
+
+.inputText:focus {
+  padding-bottom: 6px;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #00dd04, #03cf00);
+  border-image-slice: 1;
+}
+
+.inputText:focus ~ .inputTextLabel {
+  color: #21dd00;
+}
+
+.inputText:not(:placeholder-shown) ~ .inputTextLabel,
+.inputText:focus ~ .inputTextLabel {
+  position: absolute;
+  display: block;
+  transition: 0.2s;
+  font-size: 15px;
+  font-weight: 700;
+  top: -17px;
+}
+
+.inputText:required,
+.inputText:invalid {
+  box-shadow: none;
+}
+
+
+  .radioGroup {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .radioItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .radioInput {
+    margin-right: 10px;
+  }
+  
+  .radioLabel {
+    font: 500 16px 'Uni Neue', sans-serif;
+  }
+  
+  .submitButton {
+    background-color: #25c935;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font: 700 16px 'Uni Neue', sans-serif;
+    cursor: pointer;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+  
+@media (max-width: 991px) {
+  .activitySection {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+

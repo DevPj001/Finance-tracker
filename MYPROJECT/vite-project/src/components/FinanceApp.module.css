@@ -1,0 +1,457 @@
+.financeApp {
+  background-color: #fbfbfb;
+  display: flex;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 18%; 
+  background-color: #181818;
+  display: flex;
+  flex-direction: column;
+  padding: 52px 38px 113px;
+  z-index: 1000;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #f4f4f4;
+  justify-content: center;
+  font: 600 19px 'Clash Display', -apple-system, Roboto, Helvetica, sans-serif;
+  font-family: "Lucida Console", Courier, monospace;
+
+}
+
+.logo {
+  width: 41px;
+  height: 41px;
+}
+
+.navContainer,
+.preferencesContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 78px;
+}
+
+.navTitle {
+  color: #e7e7e7;
+  font-size: 19px;
+  font-weight: 300;
+  margin-bottom: 30px;
+  font-family: "Lucida Console", Courier, monospace;
+
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: #e7e7e7;
+  margin-bottom: 27px;
+}
+
+.navIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.navLabel {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 106px;
+}
+
+
+.userName {
+  color: #e3e3e3;
+  font-size: 20px;
+  font-family: fantasy;
+
+  
+}
+
+.userEmail {
+  color: #c1c1c1;
+  font-size: 16px;
+  font-weight: 550;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+
+}
+
+.dashboard {
+  margin-left: 22.5%;
+  width: 82%; 
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboardHeader {
+  background-color: #fff;
+  display: flex;
+  min-height: 87px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.dashboardTitle {
+  color: #000;
+  font: 600 25px/1.4 'Clash Display', -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.iconButton {
+  border-radius: 10px;
+  background-color: #e4e4e4;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+
+.dashboardContent {
+  display: flex;
+  padding: 33px 20px;
+  gap: 20px;
+}
+
+.mainContent {
+  width: 64%;
+  height: 5%;
+}
+
+.financialOverview {
+  display: flex;
+  gap: 20px;
+}
+
+.financialCard {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 27px 22px;
+  width: 33.33%;
+  background-color: #009118;
+}
+
+.cardIcon {
+  background-color: rgba(75, 255, 93, 0.2);
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+}
+
+.cardContent {
+  margin-top: 19px;
+  color: #0a0a0a;
+}
+
+.cardTitle {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 100;
+  margin-bottom: 4px;
+  font-family: fantasy;
+
+}
+
+.cardAmount {
+  color: #0a0a0a;
+  font-size: 26px;
+  font-weight: 100;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+.financialCardgray .cardAmount {
+  color: #252525;
+}
+
+.chartTitle {
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 41px;
+}
+
+.chartContent {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 69px;
+}
+
+.chartItem {
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  padding: 0 21px;
+  text-align: center;
+}
+
+.chartItemgray {
+  background-color: #f5f5f5;
+}
+
+.chartItemgreen {
+  background-color: #25c935;
+}
+
+.chartItemdark {
+  background-color: #545454;
+  color: #fff;
+}
+
+.itemAmount {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.itemCategory {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 11px;
+}
+
+.comparisonTitle {
+  color: #000;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 52px;
+}
+
+.comparisonBar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.barLabel {
+  color: #838383;
+  font-size: 14px;
+  font-weight: 700;
+  width: 100px;
+}
+
+.barContainer {
+  flex-grow: 1;
+  height: 23px;
+  background-color: #f4f4f4;
+  border-radius: 9px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: #25c935;
+  border-radius: 9px;
+}
+
+.transactionHistory {
+  margin-top: 31px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05);
+  padding: 17px 26px;
+}
+
+.transactionTitle {
+  color: #000;
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 11px;
+}
+
+.transactionItem {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.transactionUser {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 150px;
+}
+
+.transactionAvatar {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+}
+
+.transactionName {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.transactionType,
+.transactionDetails,
+.transactionStatus {
+  flex: 1;
+  font-size: 20px;
+  text-align: center;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+
+}
+
+.transactionCompletion,
+.transactionAmount {
+  font-size: 20px;
+  flex: 1;
+
+  color: #000000;
+  text-align: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.transactionDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionStatus {
+  color: #25c935;
+}
+
+.transactionMore {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .financeApp {
+    flex-direction: column;
+  }
+
+  .sidebar,
+  .dashboard {
+    width: 100%;
+    position: relative;
+  }
+
+  .sidebar {
+    padding: 20px;
+  }
+
+  .dashboard {
+    margin-left: 0;
+  }
+
+  .navContainer,
+  .preferencesContainer {
+    margin-top: 40px;
+  }
+
+  .userProfile {
+    margin-top: 40px;
+  }
+
+  .dashboardContent {
+    flex-direction: column;
+  }
+
+  .mainContent,
+  .activityChart {
+    width: 100%;
+  }
+
+  .financialOverview {
+    flex-direction: column;
+  }
+
+  .financialCard {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .chartContent {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .transactionHistory {
+    overflow-x: auto;
+  }
+
+  .transactionItem {
+    min-width: 600px;
+  }
+}
+
+.chartContainer {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%; 
+  max-width: 800px; 
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out; 
+}
+
+.chartWrapper {
+  width: 100%;
+  height: 400px;
+  transition: height 0.3s ease-in-out; 
+}
+
+
+.chartTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chartLegend {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.legendColor {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.legendLabel {
+  font-size: 14px;
+  color: #555;
+}
