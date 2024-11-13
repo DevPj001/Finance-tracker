@@ -134,6 +134,7 @@ const ActivitySection = () => {
           onBlur={formik.handleBlur}
           value = {formik.values.purpose}
           className={styles.inputText}
+          maxLength={35}
           />
 
 {formik.touched.purpose && formik.errors.purpose ? (
